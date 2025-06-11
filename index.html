@@ -243,6 +243,70 @@
             font-weight: bold;
             color: #4caf50;
         }
+        /* existing styles above... */
+
+/* ✅ Mobile responsiveness improvements */
+@media (max-width: 768px) {
+    select {
+    max-width: 100%;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .step-title {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .parameter-grid, .controls, .score-breakdown {
+        grid-template-columns: 1fr !important;
+    }
+
+    .parameter-pair {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .quadrant-title {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .control-group label {
+        font-size: 0.95em;
+    }
+
+    .interactive-example > div:first-child > div {
+        grid-template-columns: 1fr !important;
+    }
+
+    select {
+        font-size: 1em;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
     </style>
 </head>
 <body>
